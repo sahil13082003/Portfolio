@@ -59,11 +59,13 @@ client/               # Frontend (React) application
 
 
 ## Usage
+
 To run the development server, use the following command:
 
 ```bash
 npm run start
 ```
+
 Open http://localhost:3000 to view it in your browser.
 
 # Technologies Used
