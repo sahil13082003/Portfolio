@@ -1,0 +1,93 @@
+.contact {
+    padding: 40px 25px;
+    background-color: var(--background-two); /* Adjust as needed */
+  }
+  
+  .contact_heading {
+    font-size: 49px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .contact_email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #e9eef5; /* Adjust as needed */
+    max-width: 400px;
+    margin: auto auto 30px auto;
+    border-radius: 8px;
+    color: #9c27b0;
+    padding: 15px;
+  }
+  
+  .contact_email img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 15px;
+  }
+  
+  .contact_form_container {
+    background-color: #ffffff; /* Background color of the form container */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 20px;
+    max-width: 600px; /* Width of the container */
+    margin: auto;
+  }
+  
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .contact_formcontrol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+  }
+  
+  .contact_formcontrol_label {
+    margin-bottom: 5px;
+    font-size: 23px;
+    align-self: flex-start;
+    color: #6b7688; /* Adjust as needed */
+  }
+  
+  .contact_formcontrol_input {
+    padding: 12px;
+    background-color: #e9eef5; /* Adjust as needed */
+    border: 1px solid #6b7688;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 5px;
+    color: #6b7688; /* Adjust as needed */
+    resize: vertical;
+  }
+  
+  .contact_formcontrol_submit {
+    margin-top: 25px;
+    padding: 10px 30px;
+    background-color: #9c27b0;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    max-width: 120px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact_formcontrol_submit:hover {
+    background-color: #871d9a;
+  }
+  

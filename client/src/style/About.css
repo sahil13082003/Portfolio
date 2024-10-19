@@ -1,0 +1,150 @@
+/* About.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 2rem; /* Adjust this value to fit below the navbar */
+  background-color: var(--background-two); /* Replace with your desired background color */
+  height: 100%;
+}
+
+.about_left {
+  flex: 0 0 50%;
+}
+
+.about_left_head {
+  letter-spacing: 1px;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Corrected margin */
+  color: #9c27b0;
+}
+
+.about_left_subhead {
+  font-size: 32px; /* New subheading for Full Stack Developer */
+  color: #cc501f; /* Replace with your desired color */
+  margin-bottom: 36px;
+}
+
+.about_left_text {
+  font-size: 24px; /* Increased font size */
+  color: rgba(42, 41, 41, 0.6); /* Faint color */
+  font-weight: 500; /* Medium weight */
+}
+
+.about_left_socialMedia {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px; /* Increased gap between icons */
+}
+
+.about_left_socialMedia img {
+  width: 45px;
+  height: 48px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.about_buttons {
+  margin-top: 15px;
+  padding-top: 20px; /* Added padding */
+}
+
+.download_resume {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px; /* Increased padding */
+  font-size: 20px; /* Increased font size */
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #9c27b0;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effect */
+}
+
+.download_resume:hover {
+  background-color: #e9eef5; /* Background color on hover */
+  color: #9c27b0; /* Font color on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about_right {
+  flex: 0 0;
+}
+
+.about_right_profilePic {
+  border: 1px solid transparent;
+  border-radius: 50% 10%;
+  margin: 20px;
+  height: 380px; /* Increased size */
+  width: 380px; /* Increased size */
+  background-clip: content-box, border-box;
+  background-size: cover;
+  background-image: url('../assets/Sahil_Photo.jpg'), linear-gradient(to bottom left, #eee7e7, #fbf3f3);
+  background-repeat: no-repeat;
+  padding: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about_left_head {
+    font-size: 32px;
+  }
+
+  .about_left_subhead {
+    font-size: 24px;
+  }
+
+  .about_left_text {
+    font-size: 18px;
+  }
+
+  .about_right_profilePic {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    flex-direction: column-reverse;
+    padding: 50px 25px;
+  }
+
+  .about_left {
+    text-align: center;
+  }
+
+  .about_left_head {
+    font-size: 28px;
+  }
+
+  .about_left_subhead {
+    font-size: 20px;
+  }
+
+  .about_left_text {
+    font-size: 16px;
+  }
+
+  .about_right_profilePic {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about_right_profilePic {
+    height: 200px;
+    width: 200px;
+  }
+}

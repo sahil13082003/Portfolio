@@ -1,0 +1,49 @@
+.workSection {
+    display: flex;
+    flex-direction: column; /* Column layout to stack the title and content vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center all text horizontally */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .workTitle {
+    font-size: 50px;
+  font-weight: bold;
+  color: black; /* Updated color */
+  margin-bottom: 130px;
+  position: relative;/* Ensures the title is centered */
+  }
+  
+  .loaderContainer {
+    text-align: center;
+    margin-bottom: 400px;
+  }
+  
+  .spinner {
+    border: 6px solid #f3f3f3; /* Light gray */
+    border-top: 6px solid #9c27b0; /* Purple color */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loadingText {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #9c27b0; /* Text color */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .content {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
