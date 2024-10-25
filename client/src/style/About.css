@@ -90,7 +90,7 @@ body {
   width: 380px; /* Increased size */
   background-clip: content-box, border-box;
   background-size: cover;
-  background-image: url('../assets/Sahil_Photo.jpg'), linear-gradient(to bottom left, #eee7e7, #fbf3f3);
+  background-image: url('../assets/sahil_Profile_photo.jpeg'), linear-gradient(to bottom left, #eee7e7, #fbf3f3);
   background-repeat: no-repeat;
   padding: 12px;
 }

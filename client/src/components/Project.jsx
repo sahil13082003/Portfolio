@@ -16,25 +16,25 @@ const projects = [
     description: 'AgriRentHub is a user-friendly online platform designed to empower farmers. This platform facilitates farmers in renting their equipment to fellow farmers at cost-effective rates, creating an opportunity to generate extra income. A smart and efficient solution for optimizing resources in agriculture.',
     image: Agrirenthub,
     github: 'https://github.com/yourusername/projectone',
-    live: 'https://projectone.example.com'
+    // live: 'https://projectone.example.com'
   },
   {
     id: 2,
-    title: 'PHP CRUD Operation',
-    tech: ['PHP', 'MySQL', 'HTML', 'CSS'],
-    description: 'This project demonstrates a basic PHP CRUD (Create, Read, Update, Delete) application. It allows users to perform essential database operations on a simple web interface. The application includes features like adding new records, displaying existing records, updating records, and deleting records from a MySQL database.',
+    title: 'MERN CRUD Operation',
+    tech: ['React', 'Node Js', 'Express Js', 'MongoDB','Rest-API'],
+    description: 'This project demonstrates a basic MERN CRUD (Create, Read, Update, Delete) application. It allows users to perform essential database operations on a simple web interface. The application includes features like adding new records, displaying existing records, updating records, and deleting records from a MongoDB database.',
     image: crud,
-    github: 'https://github.com/yourusername/projecttwo',
+    github: 'https://github.com/sahil13082003/MERN-CRUD-Operations-',
     live: 'https://projecttwo.example.com'
   },
   {
     id: 3,
     title: 'Automatic Timetable Generator',
-    tech: ['React', 'Express', 'Node.js', 'MongoDB'],
+    tech: ['React', 'Express', 'Node.js', 'MongoDB','DSA(Scheduling Algorithm)'],
     description: 'A brief description of Project Three.',
     image: Automatic,
-    github: 'https://github.com/yourusername/projectthree',
-    live: 'https://projectthree.example.com'
+    github: 'https://github.com/sahil13082003/Automatic-Timetable-Generator',
+    live: 'https://automatic-timetable-generator.vercel.app/'
   },
   {
     id: 4,
@@ -42,27 +42,27 @@ const projects = [
     tech: ['React','Node.js', 'Express', 'MongoDB'],
     description: 'AgriRentHub is a user-friendly online platform designed to empower farmers. This platform facilitates farmers in renting their equipment to fellow farmers at cost-effective rates, creating an opportunity to generate extra income. A smart and efficient solution for optimizing resources in agriculture.',
     image: inshort_clone,
-    github: 'https://github.com/yourusername/projectfour',
-    live: 'https://projectfour.example.com'
+    github: 'https://github.com/sahil13082003/Inshort_Clone_main',
+    live: 'https://inshort-clone-main.vercel.app/'
   },
   {
     id: 3,
-    title: 'Automatic Timetable Generator',
-    tech: ['React', 'Express', 'Node.js', 'MongoDB'],
+    title: 'Aasan-Delivery-AI-Based-Customized-Time-Slot-Delivery',
+    tech: ['React', 'Express', 'Node.js', 'MongoDB','Machine Learning'],
     description: 'A brief description of Project Three.',
     image: Automatic,
-    github: 'https://github.com/yourusername/projectthree',
-    live: 'https://projectthree.example.com'
+    github: 'https://github.com/sahil13082003/Aasan-Delivery-AI-Based-Customized-Time-Slot-Delivery',
+    // live: 'https://projectthree.example.com'
   },
-  {
-    id: 4,
-    title: 'Inshort Clone',
-    tech: ['React','Node.js', 'Express', 'MongoDB'],
-    description: 'AgriRentHub is a user-friendly online platform designed to empower farmers. This platform facilitates farmers in renting their equipment to fellow farmers at cost-effective rates, creating an opportunity to generate extra income. A smart and efficient solution for optimizing resources in agriculture.',
-    image: inshort_clone,
-    github: 'https://github.com/yourusername/projectfour',
-    live: 'https://projectfour.example.com'
-  },
+  // {
+  //   id: 4,
+  //   title: 'Inshort Clone',
+  //   tech: ['React','Node.js', 'Express', 'MongoDB'],
+  //   description: 'AgriRentHub is a user-friendly online platform designed to empower farmers. This platform facilitates farmers in renting their equipment to fellow farmers at cost-effective rates, creating an opportunity to generate extra income. A smart and efficient solution for optimizing resources in agriculture.',
+  //   image: inshort_clone,
+  //   github: 'https://github.com/yourusername/projectfour',
+  //   live: 'https://projectfour.example.com'
+  // },
   // Add more projects here
 ];
 
