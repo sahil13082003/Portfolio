@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Moon from "../assets/moon.webp"; // Replace with your actual path
-import Sun from "../assets/sun.webp"; // Replace with your actual path
+import UserImage from "../assets/sahil_Profile_photo.jpeg"; // Replace with the actual path to your image
 
 const Navbar = ({ switchTheme = () => {}, theme }) => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -28,15 +28,22 @@ const Navbar = ({ switchTheme = () => {}, theme }) => {
           </button>
         </div>
 
-        {/* Desktop and Mobile Name and Theme Icon */}
-        <div className="flex items-center space-x-6">
-          <span className="text-3xl md:text-4xl lg:hidden ml-auto">Sahil</span>
+        {/* Desktop and Mobile Name with Image and Theme Icon */}
+        <div className="flex items-center space-x-4">
           <img
-            src={theme === "Dark" ? Moon : Sun}
-            alt="Theme icon"
-            className="w-12 h-12 rounded-full p-1 cursor-pointer border-2 border-[#9c27b0]"
-            onClick={switchTheme}
+            src={UserImage}
+            alt="User Logo"
+            className="w-10 h-10 rounded-full border-1"
           />
+          <span className="text-3xl md:text-4xl text-[#9c27b0]">Sahil</span>
+          {theme === "Dark" && (
+            <img
+              src={Moon}
+              alt="Theme icon"
+              className="w-12 h-12 rounded-full p-1 cursor-pointer border-2 border-[#9c27b0]"
+              onClick={switchTheme}
+            />
+          )}
         </div>
 
         {/* Desktop Navigation Links */}

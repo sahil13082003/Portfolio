@@ -5,65 +5,55 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import Agrirenthub from '../assets/agrirenthub.png';
 import crud from '../assets/php_crud.png';
-import inshort_clone from '../assets/inshort_clone.png'
-import Automatic from '../assets/automatic.png'
+import inshort_clone from '../assets/inshort_clone.png';
+import Automatic from '../assets/automatic.png';
 
 const projects = [
   {
     id: 1,
     title: 'Agricultural Equipment Rental System',
-    tech: ['PHP', 'HTML', 'CSS', 'Razorpay', 'SMTP-Mailer', 'MySQL'],
+    tech: ['php', 'html', 'css', 'razorpay', 'smtp-mailer', 'mysql'],
     description: 'AgriRentHub is a user-friendly online platform designed to empower farmers. This platform facilitates farmers in renting their equipment to fellow farmers at cost-effective rates, creating an opportunity to generate extra income. A smart and efficient solution for optimizing resources in agriculture.',
     image: Agrirenthub,
     github: 'https://github.com/yourusername/projectone',
-    // live: 'https://projectone.example.com'
   },
+  
   {
     id: 2,
-    title: 'MERN CRUD Operation',
-    tech: ['React', 'Node Js', 'Express Js', 'MongoDB','Rest-API'],
-    description: 'This project demonstrates a basic MERN CRUD (Create, Read, Update, Delete) application. It allows users to perform essential database operations on a simple web interface. The application includes features like adding new records, displaying existing records, updating records, and deleting records from a MongoDB database.',
-    image: crud,
-    github: 'https://github.com/sahil13082003/MERN-CRUD-Operations-',
-    live: 'https://projecttwo.example.com'
-  },
-  {
-    id: 3,
     title: 'Automatic Timetable Generator',
-    tech: ['React', 'Express', 'Node.js', 'MongoDB','DSA(Scheduling Algorithm)'],
-    description: 'A brief description of Project Three.',
+    tech: ['react', 'express', 'node.js', 'mongodb', 'dsa(scheduling algorithm)'],
+    description: 'The Automatic Timetable Generator is a MERN stack project designed to automate academic scheduling, reducing manual effort and streamlining the process. It allows easy addition and management of teachers and subjects, assigning subjects to specific teachers, and generating conflict-free schedules. With an intuitive dashboard, it enables visualization and adjustments, making timetable management efficient and user-friendly.',
     image: Automatic,
     github: 'https://github.com/sahil13082003/Automatic-Timetable-Generator',
     live: 'https://automatic-timetable-generator.vercel.app/'
   },
   {
+    id: 3,
+    title: 'Aasan Delivery AI-Based Customized Time-Slot Delivery',
+    tech: ['react', 'express', 'node.js', 'mongodb', 'machine learning'],
+    description: 'Developed a centralized web application to streamline parcel delivery for post offices. Key features include OTP-based authentication, QR code generation for consignments, real-time address updates, and delivery slot prediction. Integrated consignment tracking for postmen and automated notifications, enhancing delivery efficiency and customer satisfaction.',
+    image: Automatic,
+    github: 'https://github.com/sahil13082003/Aasan-Delivery-AI-Based-Customized-Time-Slot-Delivery',
+  },
+  {
     id: 4,
     title: 'Inshort Clone',
-    tech: ['React','Node.js', 'Express', 'MongoDB'],
-    description: 'AgriRentHub is a user-friendly online platform designed to empower farmers. This platform facilitates farmers in renting their equipment to fellow farmers at cost-effective rates, creating an opportunity to generate extra income. A smart and efficient solution for optimizing resources in agriculture.',
+    tech: ['react', 'node.js', 'express', 'mongodb'],
+    description: 'Created a responsive news platform inspired by Inshorts, allowing users to access concise news updates across various categories. This web application is built using React for a seamless user interface, Node.js and Express for backend data processing, and MongoDB for efficient data storage. Key features include real-time news aggregation, a user-friendly UI for easy browsing on both mobile and desktop, and scalable data handling to support a growing volume of news content. The project is live on Vercel, ensuring fast and accessible news delivery.',
     image: inshort_clone,
     github: 'https://github.com/sahil13082003/Inshort_Clone_main',
     live: 'https://inshort-clone-main.vercel.app/'
   },
   {
-    id: 3,
-    title: 'Aasan-Delivery-AI-Based-Customized-Time-Slot-Delivery',
-    tech: ['React', 'Express', 'Node.js', 'MongoDB','Machine Learning'],
-    description: 'A brief description of Project Three.',
-    image: Automatic,
-    github: 'https://github.com/sahil13082003/Aasan-Delivery-AI-Based-Customized-Time-Slot-Delivery',
-    // live: 'https://projectthree.example.com'
+    id: 5,
+    title: 'MERN CRUD Operation',
+    tech: ['react', 'node.js', 'express.js', 'mongodb', 'rest-api'],
+    description: 'This project demonstrates a basic MERN CRUD (Create, Read, Update, Delete) application. It allows users to perform essential database operations on a simple web interface. The application includes features like adding new records, displaying existing records, updating records, and deleting records from a MongoDB database.',
+    image: crud,
+    github: 'https://github.com/sahil13082003/MERN-CRUD-Operations-',
+    live: 'https://projecttwo.example.com'
   },
-  // {
-  //   id: 4,
-  //   title: 'Inshort Clone',
-  //   tech: ['React','Node.js', 'Express', 'MongoDB'],
-  //   description: 'AgriRentHub is a user-friendly online platform designed to empower farmers. This platform facilitates farmers in renting their equipment to fellow farmers at cost-effective rates, creating an opportunity to generate extra income. A smart and efficient solution for optimizing resources in agriculture.',
-  //   image: inshort_clone,
-  //   github: 'https://github.com/yourusername/projectfour',
-  //   live: 'https://projectfour.example.com'
-  // },
-  // Add more projects here
+  
 ];
 
 const Project = () => {
@@ -71,11 +61,13 @@ const Project = () => {
 
   const filteredProjects = filter === 'all'
     ? projects
-    : projects.filter(project => project.tech.map(t => t.toLowerCase()).includes(filter));
+    : projects.filter(project =>
+        project.tech.map(t => t.toLowerCase()).includes(filter)
+      );
 
   return (
     <div id="projects" className="project">
-      <h2 className="project_heading">Personal Projects</h2>
+      <h2 className="project_heading">Projects</h2>
       <div className="project_buttons">
         <button
           className={`project_button ${filter === 'all' ? 'active' : ''}`}
@@ -101,6 +93,13 @@ const Project = () => {
         >
           Node.js
         </button>
+
+        <button
+          className={`project_button ${filter === 'machine learning' ? 'active' : ''}`}
+          onClick={() => setFilter('machine learning')}
+        >
+          Machine Learning
+        </button>
       </div>
       <div className="project_cards">
         {filteredProjects.map(project => (
@@ -117,9 +116,11 @@ const Project = () => {
               <a href={project.github} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} className="project_card_icon" />
               </a>
-              <a href={project.live} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGlobe} className="project_card_icon" />
-              </a>
+              {project.live && (
+                <a href={project.live} target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGlobe} className="project_card_icon" />
+                </a>
+              )}
             </div>
           </div>
         ))}

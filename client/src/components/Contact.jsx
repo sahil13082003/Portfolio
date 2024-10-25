@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../style/Contact.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import gmail from '../assets/gmail.webp';
 
 const Contact = () => {
@@ -19,12 +21,26 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error('Please fill out all fields.');
+      return;
+    }
+
+    if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      toast.error('Please enter a valid email address.');
+      return;
+    }
+
+    // Show success toast and reset form
+    toast.success('Form submitted successfully!');
+    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
     <div id="contact" className="contact">
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} />
       <h2 className="contact_heading">Contact Me</h2>
       <div className="contact_email">
         <img src={gmail} alt="Email Icon" />
