@@ -51,7 +51,7 @@ const projects = [
     description: 'This project demonstrates a basic MERN CRUD (Create, Read, Update, Delete) application. It allows users to perform essential database operations on a simple web interface. The application includes features like adding new records, displaying existing records, updating records, and deleting records from a MongoDB database.',
     image: crud,
     github: 'https://github.com/sahil13082003/MERN-CRUD-Operations-',
-    live: 'https://projecttwo.example.com'
+    live: 'https://mern-crud-operations-iota.vercel.app/'
   },
   
 ];
