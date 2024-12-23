@@ -7,6 +7,7 @@ import Agrirenthub from '../assets/agrirenthub.png';
 import crud from '../assets/php_crud.png';
 import inshort_clone from '../assets/inshort_clone.png';
 import Automatic from '../assets/automatic.png';
+import Assan from '../assets/Aasaan_Delivery.png';
 
 const projects = [
   {
@@ -30,9 +31,9 @@ const projects = [
   {
     id: 3,
     title: 'Aasan Delivery AI-Based Customized Time-Slot Delivery',
-    tech: ['react', 'express', 'node.js', 'mongodb', 'machine learning'],
+    tech: ['FLASK', 'Python', 'html', 'mongodb', 'machine learning','bootstrap'],
     description: 'Developed a centralized web application to streamline parcel delivery for post offices. Key features include OTP-based authentication, QR code generation for consignments, real-time address updates, and delivery slot prediction. Integrated consignment tracking for postmen and automated notifications, enhancing delivery efficiency and customer satisfaction.',
-    image: Automatic,
+    image: Assan,
     github: 'https://github.com/sahil13082003/Aasan-Delivery-AI-Based-Customized-Time-Slot-Delivery',
   },
   {
