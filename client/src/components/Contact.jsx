@@ -24,28 +24,39 @@ const Contact = () => {
 
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
-      toast.error('Please fill out all fields.');
+      toast.error('❌ Please fill out all fields.');
       return;
     }
 
     if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      toast.error('Please enter a valid email address.');
+      toast.error('⚠️ Please enter a valid email address.');
       return;
     }
 
     // Show success toast and reset form
-    toast.success('Form submitted successfully!');
+    toast.success('📧 Mail sent successfully!');
     setFormData({ name: '', email: '', message: '' });
   };
 
   return (
     <div id="contact" className="contact">
-      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} />
+      <ToastContainer 
+        position="top-center"
+        autoClose={2500}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="colored"
+      />
+      
       <h2 className="contact_heading">Contact Me</h2>
+      
       <div className="contact_email">
         <img src={gmail} alt="Email Icon" />
         <span>sahilgolhar7@gmail.com</span>
       </div>
+
       <div className="contact_form_container">
         <form className="contact_form" onSubmit={handleSubmit}>
           <div className="contact_formcontrol">
@@ -60,6 +71,7 @@ const Contact = () => {
               required
             />
           </div>
+
           <div className="contact_formcontrol">
             <label htmlFor="email" className="contact_formcontrol_label">Email:</label>
             <input
@@ -72,6 +84,7 @@ const Contact = () => {
               required
             />
           </div>
+
           <div className="contact_formcontrol">
             <label htmlFor="message" className="contact_formcontrol_label">Message:</label>
             <textarea
@@ -83,6 +96,7 @@ const Contact = () => {
               required
             />
           </div>
+
           <button type="submit" className="contact_formcontrol_submit">Submit</button>
         </form>
       </div>
