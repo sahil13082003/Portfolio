@@ -4,7 +4,7 @@ import linkedin from '../assets/linkedin.webp';
 import leetcode from '../assets/leetcode.png';
 import gmail from '../assets/gmail.webp';
 // Import your resume PDF
-import resumePDF from '../assets/Resume_Sahil.pdf'; // Assuming the resume is in the assets folder
+import resumePDF from '../assets/Sahil_Golhar_Resume.pdf'; // Assuming the resume is in the assets folder
 
 import '../style/About.css';
 
