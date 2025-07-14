@@ -1,49 +1,72 @@
 .workSection {
-    display: flex;
-    flex-direction: column; /* Column layout to stack the title and content vertically */
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    text-align: center; /* Center all text horizontally */
-    padding: 20px; /* Add some padding */
-  }
-  
-  .workTitle {
-    font-size: 50px;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 25px;
+  background-color: #ffffff ;
+}
+
+.workTitle {
+  font-size: 50px;
   font-weight: bold;
   color: black; /* Updated color */
-  margin-bottom: 130px;
-  position: relative;/* Ensures the title is centered */
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.loaderContainer {
+  text-align: center;
+  padding: 40px;
+}
+
+.spinner {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top-color: #4e73df;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loadingText {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.companyName {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.rolePeriod {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.workDetails {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.techStack {
+  font-style: italic;
+  color: #444;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
-  
-  .loaderContainer {
-    text-align: center;
-    margin-bottom: 400px;
-  }
-  
-  .spinner {
-    border: 6px solid #f3f3f3; /* Light gray */
-    border-top: 6px solid #9c27b0; /* Purple color */
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
-  }
-  
-  .loadingText {
-    margin-top: 15px;
-    font-size: 18px;
-    color: #9c27b0; /* Text color */
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  .content {
-    font-size: 24px;
-    color: #333;
-    margin-top: 20px;
-  }
-  
+}
